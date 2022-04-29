@@ -1,0 +1,27 @@
+html
+html
+   head
+      title Form Tester
+   body
+      form(action = "/addProducts", method = "POST")
+         div
+            label(for = "ProductName") Product Name:
+            input(name = "ProductName" )
+         br
+         div
+            label(for = "ProductDiscription") Product Discription:
+            input(name = "ProductDiscription" )
+         br
+         div 
+            label(for = "CategaryType") Select Category : 
+            select(name="Categories")
+               each priority in Categories
+                  option(value=priority.Name ) #{priority.Name}
+         br
+         button(type = "submit") Add
+
+
+         a(class='button', href='products') Show Products
+         a(class='button', href='/') Home
+
+

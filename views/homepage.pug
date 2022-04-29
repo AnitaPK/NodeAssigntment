@@ -1,0 +1,21 @@
+html
+html
+   head
+      title Form Tester
+   body
+      form(action = "/", method = "POST")
+         div
+            label(for = "CategoryName") Category Name:
+            input(name = "CategoryName" )
+         br
+         div
+            label(for = "CategaryType") Category Type:
+            input(name = "CategaryType" )
+         br
+         button(type = "submit") Add
+
+         a(class='button', href='ListCategories') ListCategories
+         a(class='button', href='/') Home
+         a(class='button', href='/addProducts') Add Products
+
+

@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+  head
+    style.
+      div.card {
+           border: 1px solid #dddddd;
+           text-align: center;
+           padding: 8px;
+      }
+    
+    title ListProducts 
+  body
+    h1(style='text-align:center;') Products     
+    section#missionSection
+        each cat in Products  
+            div.card
+                h3 
+                div.card-box
+                    div.card-img
+                        //- img(src="/image.jpeg") image of product
+                    div.card-content
+                        p Product Name : #{cat.Description}
+                        p Product Categories : #{cat.Categories}
+    
+    a(class='button', href='/') Home
+    
