@@ -1,0 +1,12 @@
+1. Before Starting the server pleasce creaet Database and tables with the name of 
+  Database name = TestDb 
+   Tables
+    1.Categories
+        ID	auto increment , primary
+        Name	
+        Type
+    2.products 
+      ID	auto increment , primary
+      Name	
+      Description	
+      Categories 
